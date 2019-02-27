@@ -41,7 +41,7 @@ class ExternalLinks extends Component {
         display: 'flex',
         justifyContent: 'space-between',
         display: 'flex',
-        position: 'fixed',
+        position: 'absolute',
         bottom: '30px',
         width: '80%',
         marginLeft: '10vw'
