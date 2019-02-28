@@ -6,8 +6,6 @@ import cvIcon from '../assets/imgs/cv.svg'
 import instaIcon from '../assets/imgs/insta.svg'
 import linkedinIcon from '../assets/imgs/linkedin.svg'
 
-
-
 var btnData = [
   {
     title: 'Instagram',
@@ -42,9 +40,9 @@ class ExternalLinks extends Component {
         justifyContent: 'space-between',
         display: 'flex',
         position: 'absolute',
-        bottom: '30px',
+        bottom: '70px',
         width: '80%',
-        marginLeft: '10vw'
+        marginLeft: '10vw',
       }
 
       return <div style={styles}>{ namesList }</div>
