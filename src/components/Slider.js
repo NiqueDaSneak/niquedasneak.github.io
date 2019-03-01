@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import FAQ from './FAQ'
 
 import '../assets/sass/slider.sass'
 import reactImg from '../assets/imgs/react.svg'
 import codeImg from '../assets/imgs/code.svg'
 import cubeImg from '../assets/imgs/cube.svg'
+import Popout from './Popout'
 
 class Slider extends Component {
   state = {
-    whichModule: 0,
     content: [
       {
         heading: 'Rapid Prototyping & Ideation',
@@ -24,25 +25,32 @@ class Slider extends Component {
         img: codeImg,
         copy: "I've worked on some pretty interesting projects..."
       }
-    ]
+    ],
+    popoutHidden: true,
+    popoutData: null
+  }
+
+  openPopout = (clickedFAQ) => {
+    this.setState({ popoutHidden: false, popoutData: clickedFAQ })
+  }
+
+  closePopout = () => {
+    this.setState({ popoutHidden: true })
   }
 
   render() {
+    const FAQs = this.state.content.map((item, index) => {
+      return <FAQ key={index} img={item.img} heading={item.heading} copy={item.copy} openPopout={(clickedFAQ) => this.openPopout(clickedFAQ)}/>
+    })
     return(
-      <div className='slider'>
-        <div className='indicators'>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div className='sliderContainer'>
+        <div className='gradHolder'>
+          {FAQs}
         </div>
-        <hr className='hr' />
-        <div>
-          <span className='heading'>{this.state.content[this.state.whichModule].heading}</span>
-          <img className='slideImg' src={this.state.content[this.state.whichModule].img}/>
-          <span className='slideText'>{this.state.content[this.state.whichModule].copy}</span>
-
-        </div>
-        <hr className='hr' />
+        <div className={ this.state.popoutHidden ? 'popout hidden' : 'popout' }>
+          <Popout heading={ this.state.popoutData === null ? '' : this.state.popoutData.heading } copy={ this.state.popoutData === null ? '' : this.state.popoutData.copy }/>
+          <div onClick={this.closePopout} className={this.state.popoutHidden ? 'overlay hidden' : 'overlay'}></div>
+      </div>
       </div>
     )
   }
