@@ -11,16 +11,19 @@ class Slider extends Component {
   state = {
     content: [
       {
+        actionable: 'SHOWEXAMPLES',
         heading: 'Rapid Prototyping & Ideation',
         img: cubeImg,
-        copy: 'All projects have people they are supposed to serve. I quickly translate business requeriments into experince that satisfy users on all their devices; in 2019. Make Options Great Again.'
+        copy: 'All projects have people they are supposed to serve. I quickly translate business requeriments into experince that satisfy users on all their devices.'
       },
       {
+        actionable: 'LINKTOGITHUB',
         heading: 'JavaScript Utilization',
         img: reactImg,
         copy: 'I love JavaScript...a lot! I can use it in lots of ways, but React/React Native are my frameworks of choice.'
       },
       {
+        actionable: 'LINKTOEXAMPLES',
         heading: 'Execution & Delivery',
         img: codeImg,
         copy: "I've worked on some pretty interesting projects..."
@@ -40,7 +43,7 @@ class Slider extends Component {
 
   render() {
     const FAQs = this.state.content.map((item, index) => {
-      return <FAQ key={index} img={item.img} heading={item.heading} copy={item.copy} openPopout={(clickedFAQ) => this.openPopout(clickedFAQ)}/>
+      return <FAQ key={index} actionable={item.actionable} img={item.img} heading={item.heading} copy={item.copy} openPopout={(clickedFAQ) => this.openPopout(clickedFAQ)}/>
     })
     return(
       <div className='sliderContainer'>
@@ -48,7 +51,7 @@ class Slider extends Component {
           {FAQs}
         </div>
         <div className={ this.state.popoutHidden ? 'popout hidden' : 'popout' }>
-          <Popout heading={ this.state.popoutData === null ? '' : this.state.popoutData.heading } copy={ this.state.popoutData === null ? '' : this.state.popoutData.copy }/>
+          <Popout actionable={ this.state.popoutData === null ? '' : this.state.popoutData.actionable } heading={ this.state.popoutData === null ? '' : this.state.popoutData.heading } copy={ this.state.popoutData === null ? '' : this.state.popoutData.copy }/>
           <div onClick={this.closePopout} className={this.state.popoutHidden ? 'overlay hidden' : 'overlay'}></div>
       </div>
       </div>
