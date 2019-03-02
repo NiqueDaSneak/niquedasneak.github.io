@@ -1,0 +1,44 @@
+@import './colors.sass'
+
+.drawer.hidden
+  right: -70vw
+
+.drawer
+  height: 100vh
+  width: 70vw
+  background-color: grey
+  position: fixed
+  top: 0
+  right: 0vw
+  z-index: 1
+  transition: right 1s
+  .slideHeader
+    height: 20vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $brandGold
+    span
+      color: white
+      font-size: 40pt
+    section
+      &:first-of-type, &:nth-of-type(2) ,&:last-of-type
+        p
+          font-size: 20pt
+      &:first-of-type
+      &:nth-of-type(2)
+      &:last-of-type
+
+.slideOverlay.hidden
+  opacity: 0
+  transition: opacity 1s, display 1s ease-in 1s
+
+.slideOverlay
+  width: 100vw
+  height: 100vh
+  background-color: #707a234a
+  position: fixed
+  top: 0
+  left: 0
+  transition: opacity 1s, display 1s ease-in 1s
+  opacity: 1

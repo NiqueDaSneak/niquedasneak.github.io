@@ -5,7 +5,7 @@ import quickIcon from '../assets/imgs/running.svg'
 import '../assets/sass/actionbutton.sass'
 
 const ActionButton = ( props ) => (
-  <div className={ props.hidden ? 'actionButton hiddenTrue' : 'actionButton hiddenFalse' }>
+  <div onClick={ props.toggleTLDR } className={ props.hidden ? 'actionButton hiddenTrue' : 'actionButton hiddenFalse' }>
     <img style={{
         width: '58%'
       }} src={quickIcon}/>
