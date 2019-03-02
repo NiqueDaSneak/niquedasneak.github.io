@@ -12,6 +12,10 @@
   right: 0vw
   z-index: 1
   transition: right 1s
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   .slideHeader
     height: 20vh
     display: flex
@@ -21,13 +25,28 @@
     span
       color: white
       font-size: 40pt
-    section
-      &:first-of-type, &:nth-of-type(2) ,&:last-of-type
-        p
-          font-size: 20pt
-      &:first-of-type
-      &:nth-of-type(2)
-      &:last-of-type
+  section
+    &:first-of-type, &:nth-of-type(2), &:last-of-type
+      margin-bottom: 50px
+      .sectionHeader
+        font-size: 20pt
+        display: block
+        margin-bottom: 10px
+      .slidebtnContainer
+        display: flex
+        justify-content: center
+      .slidebtnContainer.first
+        .hoc
+          &:last-of-type
+            margin-left: 30px
+      .slidebtnContainer.last
+        .hoc
+          &:nth-of-type(2)
+            margin-left: 30px
+            margin-right: 30px
+    &:first-of-type
+    &:nth-of-type(2)
+    &:last-of-type
 
 .slideOverlay.hidden
   opacity: 0

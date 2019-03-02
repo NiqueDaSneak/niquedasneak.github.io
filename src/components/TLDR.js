@@ -13,21 +13,27 @@ const TLDR = ( props ) => (
         <span>TL;DR</span>
       </div>
       <section>
-        <p>Section Header</p>
-        <div className='btnContainer'>
-          <Btn title='' img={githubIcon} link='GitHub' />
-          <Btn title='' img={cvIcon} link='Resume' />
+        <span className='sectionHeader'>Section Header</span>
+        <div className='slidebtnContainer first'>
+          <Btn title='GitHub' img={githubIcon} link='GitHub' />
+          <Btn title='GitHub' img={cvIcon} link='Resume' />
         </div>
       </section>
       <section>
-        <p>Section Header</p>
+        <span className='sectionHeader'>Section Header</span>
+        <ul style={ {margin: 0} }>
+          <li>Lorem Ipsume dolor emit tisla</li>
+          <li>Lorem Ipsume dolor emit tisla</li>
+          <li>Lorem Ipsume dolor emit tisla</li>
+          <li>Lorem Ipsume dolor emit tisla</li>
+        </ul>
       </section>
       <section>
-        <p>Section Header</p>
-        <div className='btnContainer'>
-          <Btn title='' img={githubIcon} link='' />
-          <Btn title='' img={cvIcon} link='' />
-          <Btn title='' img={githubIcon} link='' />
+        <span className='sectionHeader'>Section Header</span>
+        <div className='slidebtnContainer last'>
+          <Btn title='GitHub' img={githubIcon} link='' />
+          <Btn title='GitHub' img={cvIcon} link='' />
+          <Btn title='GitHub' img={githubIcon} link='' />
         </div>
       </section>
     </section>
