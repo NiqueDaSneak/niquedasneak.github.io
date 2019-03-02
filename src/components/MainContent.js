@@ -11,7 +11,7 @@ const MainContent = ( props ) => (
         onEnter={ props.toggleActionButton }
         onLeave={ props.toggleActionButton }>
           <div>
-            <Slider />
+            <Slider toggleActionButton={ props.toggleActionButton }/>
           </div>
       </Waypoint>
     </div>

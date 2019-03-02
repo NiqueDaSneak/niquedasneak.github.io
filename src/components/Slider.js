@@ -34,10 +34,12 @@ class Slider extends Component {
   }
 
   openPopout = (clickedFAQ) => {
+    this.props.toggleActionButton()
     this.setState({ popoutHidden: false, popoutData: clickedFAQ })
   }
 
   closePopout = () => {
+    this.props.toggleActionButton()
     this.setState({ popoutHidden: true, popoutData: null })
   }
 
