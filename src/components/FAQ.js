@@ -14,7 +14,8 @@ class FAQ extends Component {
 
     var clickedFAQ = {
       heading: this.props.heading,
-      copy:this.props.copy
+      copy: this.props.copy,
+      actionable: this.props.actionable
     }
     this.props.openPopout(clickedFAQ)
   }
@@ -26,7 +27,6 @@ class FAQ extends Component {
         <span>{this.props.heading}</span>
         <img className={this.state.chevronUp ? 'up' : null} src={downChevronImg}/>
         <Ink duration={800} />
-
       </div>
     )
   }
