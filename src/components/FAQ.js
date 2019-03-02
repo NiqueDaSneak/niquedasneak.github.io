@@ -25,7 +25,7 @@ class FAQ extends Component {
       <div className='faqRow' onClick={this.toggleUp}>
         <img src={this.props.img}/>
         <span>{this.props.heading}</span>
-        <img className={this.state.chevronUp ? 'up' : null} src={downChevronImg}/>
+        <img className={ this.props.popoutDataBinding !== null && this.props.popoutDataBinding.heading === this.props.heading ? 'up' : null } src={downChevronImg}/>
         <Ink duration={800} />
       </div>
     )

@@ -38,12 +38,12 @@ class Slider extends Component {
   }
 
   closePopout = () => {
-    this.setState({ popoutHidden: true })
+    this.setState({ popoutHidden: true, popoutData: null })
   }
 
   render() {
     const FAQs = this.state.content.map((item, index) => {
-      return <FAQ key={index} actionable={item.actionable} img={item.img} heading={item.heading} copy={item.copy} openPopout={(clickedFAQ) => this.openPopout(clickedFAQ)}/>
+      return <FAQ key={index} popoutDataBinding={this.state.popoutData} actionable={item.actionable} img={item.img} heading={item.heading} copy={item.copy} openPopout={(clickedFAQ) => this.openPopout(clickedFAQ)}/>
     })
     return(
       <div className='sliderContainer'>
