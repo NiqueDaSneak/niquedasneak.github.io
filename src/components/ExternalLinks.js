@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import Btn from './Btn'
 import githubIcon from '../assets/imgs/github.svg'
 import cvIcon from '../assets/imgs/cv.svg'
