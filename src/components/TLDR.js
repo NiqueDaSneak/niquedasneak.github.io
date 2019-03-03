@@ -20,15 +20,15 @@ const TLDR = ( props ) => (
       <section>
         <span className='sectionHeader'>Quick Links</span>
         <div className='slidebtnContainer first'>
-          <Btn bgColor='#192F00' title='GitHub' img={githubIcon} link='GitHub' />
-          <Btn bgColor='#192F00' title='Resume' img={cvIcon} link='Resume' />
+          <Btn bgColor='#707A23' title='GitHub' img={githubIcon} link='GitHub' />
+          <Btn bgColor='#707A23' title='Resume' img={cvIcon} link='Resume' />
         </div>
       </section>
       <section>
         <span className='sectionHeader'>Quick Facts</span>
         <ul style={ {margin: 0, color: 'white', textAlign: 'left', width: '50vw'} }>
           <li>I design & I code</li>
-          <li>JavaScript/React/React Native is my jam</li>
+          <li>JavaScript/React/React Native are my jam</li>
         </ul>
       </section>
       <section>
