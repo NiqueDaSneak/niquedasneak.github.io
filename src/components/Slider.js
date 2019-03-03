@@ -54,8 +54,8 @@ class Slider extends Component {
         </div>
         <div className={ this.state.popoutHidden ? 'popout hidden' : 'popout' }>
           <Popout actionable={ this.state.popoutData === null ? '' : this.state.popoutData.actionable } heading={ this.state.popoutData === null ? '' : this.state.popoutData.heading } copy={ this.state.popoutData === null ? '' : this.state.popoutData.copy }/>
-          <div onClick={this.closePopout} className={this.state.popoutHidden ? 'overlay hidden' : 'overlay'}></div>
       </div>
+      <div onClick={this.closePopout} className={this.state.popoutHidden ? 'overlay hidden' : 'overlay'}></div>
       </div>
     )
   }
