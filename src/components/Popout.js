@@ -12,10 +12,10 @@ const popout = ( props ) => {
 
   switch (props.actionable) {
     case 'SHOWEXAMPLES':
-      btns = [<Btn title='See What I Mean' link='google.com' img={githubIcon}/>]
+      btns = [<Btn title='See What I Mean' link='google.com' img={rightArrowIcon}/>]
       break
     case 'LINKTOGITHUB':
-      btns = [<Btn title='GitHub' link='google.com' img={githubIcon}/>]
+      btns = [<Btn title='GitHub' link='https://www.github.com/niquedasneak' img={githubIcon}/>]
       break
     case'LINKTOEXAMPLES':
       btns = [<Btn bgColor='white' title='UC' img={ucIcon} link='' />, <Btn bgColor='#1E3D97' title='5/3' img={fiveThreeIcon} link='' />, <Btn bgColor='#57008E' title='Bridge' img={rightArrowIcon} link='' />]

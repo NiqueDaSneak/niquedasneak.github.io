@@ -20,8 +20,8 @@ const TLDR = ( props ) => (
       <section>
         <span className='sectionHeader'>Quick Links</span>
         <div className='slidebtnContainer first'>
-          <Btn bgColor='#707A23' title='GitHub' img={githubIcon} link='GitHub' />
-          <Btn bgColor='#707A23' title='Resume' img={cvIcon} link='Resume' />
+          <Btn bgColor='#707A23' title='GitHub' img={githubIcon} link='https://www.github.com/niquedasneak' />
+          <Btn bgColor='#707A23' title='Resume' img={cvIcon} link='https://www.resume.creddle.io/resume/9ayo421e0q2' />
         </div>
       </section>
       <section>
@@ -34,9 +34,9 @@ const TLDR = ( props ) => (
       <section>
         <span className='sectionHeader'>Quick Portfolio</span>
         <div className='slidebtnContainer last'>
-          <Btn bgColor='white' title='UC' img={ucIcon} link='' />
-          <Btn bgColor='#1E3D97' title='5/3' img={fiveThreeIcon} link='' />
-          <Btn bgColor='#57008E' title='Bridge' img={rightArrowIcon} link='' />
+          <Btn bgColor='white' title='UC' img={ucIcon} link='https://www.uc.edu' />
+          <Btn bgColor='#1E3D97' title='5/3' img={fiveThreeIcon} link='https://www.53.com' />
+          <Btn bgColor='#57008E' title='Bridge' img={rightArrowIcon} link='https://www.bridgeable.org' />
         </div>
       </section>
     </section>
