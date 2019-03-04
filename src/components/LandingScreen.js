@@ -30,7 +30,6 @@ const LandingScreen = () => (
     </Typist>
     </header>
     <ExternalLinks />
-    <img className='downChevronImg' src={downChevronImg } />
   </div>
 )
 
