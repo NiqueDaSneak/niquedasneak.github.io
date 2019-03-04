@@ -4,7 +4,6 @@ import Typist from 'react-typist'
 import '../assets/sass/landingScreen.sass'
 import AnimatedLogo from './AnimatedLogo'
 import ExternalLinks from './ExternalLinks'
-import downChevronImg from '../assets/imgs/down-chevron.svg'
 
 const LandingScreen = () => (
   <div className='landingScreen'>

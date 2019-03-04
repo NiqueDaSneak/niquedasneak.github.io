@@ -5,7 +5,6 @@ import LandingScreen from './components/LandingScreen'
 import MainContent from './components/MainContent'
 import ActionButton from './components/ActionButton'
 import TLDR from './components/TLDR'
-import AnimatedLogo from './components/AnimatedLogo'
 
 class App extends Component {
   state = {

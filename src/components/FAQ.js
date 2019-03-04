@@ -23,9 +23,9 @@ class FAQ extends Component {
   render() {
     return(
       <div className='faqRow' onClick={this.toggleUp}>
-        <img src={this.props.img}/>
+        <img alt='FAQ' src={this.props.img}/>
         <span>{this.props.heading}</span>
-        <img className={ this.props.popoutDataBinding !== null && this.props.popoutDataBinding.heading === this.props.heading ? 'up' : null } src={downChevronImg}/>
+        <img alt='Toggle Indicator' className={ this.props.popoutDataBinding !== null && this.props.popoutDataBinding.heading === this.props.heading ? 'up' : null } src={downChevronImg}/>
         <Ink duration={800} />
       </div>
     )

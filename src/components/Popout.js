@@ -18,15 +18,17 @@ const popout = ( props ) => {
   switch (props.actionable) {
     case 'SHOWEXAMPLES':
       btns = [<Btn title='See What I Mean' link='google.com' img={rightArrowIcon}/>]
-      correspondingImg = <img className='popoutHeadImg' style={{width: '36vw'}} src={whiteCubeImg}/>
+      correspondingImg = <img alt='See What I Mean Icon' className='popoutHeadImg' style={{width: '36vw'}} src={whiteCubeImg}/>
       break
     case 'LINKTOGITHUB':
       btns = [<Btn title='GitHub' link='https://www.github.com/niquedasneak' img={githubIcon}/>]
-      correspondingImg = <img className='popoutHeadImg' style={{width: '36vw'}} src={reactImg}/>
+      correspondingImg = <img alt='GitHub Logo' className='popoutHeadImg' style={{width: '36vw'}} src={reactImg}/>
       break
     case'LINKTOEXAMPLES':
       btns = [<Btn bgColor='white' title='UC' img={ucIcon} link='' />, <Btn bgColor='#1E3D97' title='5/3' img={fiveThreeIcon} link='' />, <Btn bgColor='#57008E' title='Bridge' img={rightArrowIcon} link='' />]
-      correspondingImg = <img className='popoutHeadImg' style={{width: '36vw'}} src={whiteCodeImg}/>
+      correspondingImg = <img alt='Examples Icon' className='popoutHeadImg' style={{width: '36vw'}} src={whiteCodeImg}/>
+      break
+    default:
       break
   }
   return (

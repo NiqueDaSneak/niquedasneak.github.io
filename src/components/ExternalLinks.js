@@ -37,7 +37,6 @@ class ExternalLinks extends Component {
     var styles = {
         display: 'flex',
         justifyContent: 'space-between',
-        display: 'flex',
         position: 'absolute',
         bottom: '70px',
         width: '80%',

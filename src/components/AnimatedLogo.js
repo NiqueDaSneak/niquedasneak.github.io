@@ -19,19 +19,19 @@ import '../assets/sass/logo.sass'
 
 const AnimatedLogo = () => (
   <div className='logoContainer'>
-    <img src={line1} />
-    <img src={line2} />
-    <img src={line3} />
-    <img src={line4} />
-    <img src={line5} />
-    <img src={line6} />
-    <img src={line7} />
-    <img src={line8} />
-    <img src={line9} />
-    <img src={line10} />
-    <img src={line11} />
-    <img src={line12} />
-    <img src={line13} />
+    <img alt='Animated Logo' src={line1} />
+    <img alt='Animated Logo' src={line2} />
+    <img alt='Animated Logo' src={line3} />
+    <img alt='Animated Logo' src={line4} />
+    <img alt='Animated Logo' src={line5} />
+    <img alt='Animated Logo' src={line6} />
+    <img alt='Animated Logo' src={line7} />
+    <img alt='Animated Logo' src={line8} />
+    <img alt='Animated Logo' src={line9} />
+    <img alt='Animated Logo' src={line10} />
+    <img alt='Animated Logo' src={line11} />
+    <img alt='Animated Logo' src={line12} />
+    <img alt='Animated Logo' src={line13} />
   </div>
 )
 

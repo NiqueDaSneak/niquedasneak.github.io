@@ -6,7 +6,7 @@ import '../assets/sass/actionbutton.sass'
 
 const ActionButton = ( props ) => (
   <div onClick={ props.toggleTLDR } className={ props.hidden ? 'actionButton hiddenTrue' : 'actionButton hiddenFalse' }>
-    <img style={{
+    <img alt='Action Button' style={{
         width: '58%'
       }} src={quickIcon}/>
       <Ink duration={800} />
