@@ -5,6 +5,7 @@ import LandingScreen from './components/LandingScreen'
 import MainContent from './components/MainContent'
 import ActionButton from './components/ActionButton'
 import TLDR from './components/TLDR'
+import AnimatedLogo from './components/AnimatedLogo'
 
 class App extends Component {
   state = {
@@ -25,6 +26,8 @@ class App extends Component {
       <div className="App">
         <LandingScreen />
         <MainContent toggleActionButton={ () => this.toggleActionButton() } />
+        <footer>
+        </footer>
         <ActionButton toggleTLDR={ () => this.toggleTLDR() } hidden={ this.state.actionButtonHidden } />
         <TLDR toggleTLDR={ () => this.toggleTLDR() } hidden={ this.state.tldrHidden } />
     </div>
