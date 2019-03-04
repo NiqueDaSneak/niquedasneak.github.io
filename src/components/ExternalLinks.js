@@ -4,7 +4,7 @@ import githubIcon from '../assets/imgs/github.svg'
 import cvIcon from '../assets/imgs/cv.svg'
 import instaIcon from '../assets/imgs/insta.svg'
 import linkedinIcon from '../assets/imgs/linkedin.svg'
-
+import '../assets/sass/externallinks.sass'
 var btnData = [
   {
     title: 'Instagram',
@@ -44,7 +44,7 @@ class ExternalLinks extends Component {
         marginLeft: '10vw',
       }
 
-      return <div style={styles}>{ namesList }</div>
+      return <div className='btnHolderExternalLinks' style={styles}>{ namesList }</div>
   }
 }
 
