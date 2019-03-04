@@ -6,7 +6,7 @@ import Slider from './Slider'
 
 const MainContent = ( props ) => (
     <div className='container'>
-      <span className='title'>I'm a Front-End Developer Specializing in...</span>
+      <span className='mainContentTitle'>I'm a Front-End Developer Specializing in...</span>
       <Waypoint
         onEnter={ props.toggleActionButton }
         onLeave={ props.toggleActionButton }>
