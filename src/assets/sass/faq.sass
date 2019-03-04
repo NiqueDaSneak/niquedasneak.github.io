@@ -1,3 +1,5 @@
+@import './queries.sass'
+
 .faqRow
   display: flex
   flex-direction: row
@@ -24,3 +26,14 @@
 
 .up
   transform: rotateX(180deg)
+
+@media #{$tablet}
+  .faqRow
+    img
+      &:first-of-type
+        width: 10vw
+      &:last-of-type
+        width: 6vw
+    span
+      font-size: 3.5vw
+      font-weight: 300

@@ -1,3 +1,5 @@
+@import './queries'
+
 .App
   background-image: url('../imgs/wood-bg.png')
   background-attachment: fixed
@@ -9,3 +11,13 @@
 footer
   height: 6vh
   background-color: #000000e0
+
+// TABLET
+@media #{$tablet}
+  .App
+    background-image: url('../imgs/wood-bg-med.png')
+
+// DESKTOP
+@media #{$desktop}
+  .App
+    background-image: url('../imgs/wood-bg-large.png')
