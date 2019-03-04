@@ -18,17 +18,21 @@
   justify-content: space-between
   box-shadow: -3px 0px 11px 0px rgba(0, 0, 0, 0.75)
   .slideHeader
-    height: 20vh
+    height: 25vh
     display: flex
     align-items: center
     justify-content: center
+    background-color: #2D3300f8
     span
       color: white
       font-size: 40pt
       font-weight: 100
   section
     &:first-of-type, &:nth-of-type(2), &:last-of-type
-      margin-bottom: 50px
+      height: 25vh
+      display: flex
+      flex-direction: column
+      justify-content: center
       .sectionHeader
         font-size: 16pt
         display: block
@@ -49,8 +53,11 @@
             margin-left: 30px
             margin-right: 30px
     &:first-of-type
+      background-color: #4E560C
     &:nth-of-type(2)
+      background-color: #8C963F
     &:last-of-type
+      background-color: #B2BC66
 
 .slideOverlay.hidden
   opacity: 0

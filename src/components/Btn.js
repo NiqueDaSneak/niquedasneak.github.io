@@ -4,7 +4,7 @@ import Ink from 'react-ink'
 import '../assets/sass/btn.sass'
 const Btn = ( props ) => (
   <div className='hoc'>
-    <a href={props.link}>
+    <a target='_blank' style={ { display: 'block'} } href={props.link}>
       <span className='btnContainer' style={props.bgColor ? {backgroundColor: props.bgColor} : null}>
             <img className='icon' src={props.img} />
           <Ink duration={800} />

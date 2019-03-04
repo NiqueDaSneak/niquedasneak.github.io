@@ -1,16 +1,37 @@
 import React from 'react'
 
-import shipLogo from '../assets/imgs/ship-logo.png'
-import shipLogoGold from '../assets/imgs/ship-logo-gold.png'
+import line1 from '../assets/imgs/logo/1.svg'
+import line2 from '../assets/imgs/logo/2.svg'
+import line3 from '../assets/imgs/logo/3.svg'
+import line4 from '../assets/imgs/logo/4.svg'
+import line5 from '../assets/imgs/logo/5.svg'
+import line6 from '../assets/imgs/logo/6.svg'
+import line7 from '../assets/imgs/logo/7.svg'
+import line8 from '../assets/imgs/logo/8.svg'
+import line9 from '../assets/imgs/logo/9.svg'
+import line10 from '../assets/imgs/logo/10.svg'
+import line11 from '../assets/imgs/logo/11.svg'
+import line12 from '../assets/imgs/logo/12.svg'
+import line13 from '../assets/imgs/logo/13.svg'
+
 
 import '../assets/sass/logo.sass'
 
 const AnimatedLogo = () => (
   <div className='logoContainer'>
-    <img className='ship1'src={shipLogoGold} />
-    <img className='ship2'src={shipLogo} />
-    <img className='ship3'src={shipLogo} />
-    <img className='ship4'src={shipLogo} />
+    <img src={line1} />
+    <img src={line2} />
+    <img src={line3} />
+    <img src={line4} />
+    <img src={line5} />
+    <img src={line6} />
+    <img src={line7} />
+    <img src={line8} />
+    <img src={line9} />
+    <img src={line10} />
+    <img src={line11} />
+    <img src={line12} />
+    <img src={line13} />
   </div>
 )
 

@@ -8,22 +8,22 @@ import linkedinIcon from '../assets/imgs/linkedin.svg'
 var btnData = [
   {
     title: 'Instagram',
-    link: 'google.com',
+    link: 'https://www.instagram.com/niquedasneak',
     img: instaIcon
   },
   {
     title: 'LinkedIn',
-    link: 'google.com',
+    link: 'https://www.linkedin.com/in/thisisdom',
     img: linkedinIcon
   },
   {
     title: 'Resume',
-    link: 'google.com',
+    link: 'https://www.resume.creddle.io/resume/9ayo421e0q2',
     img: cvIcon
   },
   {
     title: 'GitHub',
-    link: 'google.com',
+    link: 'https://www.github.com/niquedasneak',
     img: githubIcon
   }
 ]
