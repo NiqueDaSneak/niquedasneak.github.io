@@ -14,7 +14,7 @@ class Slider extends Component {
         actionable: 'SHOWEXAMPLES',
         heading: 'Rapid Prototyping & Ideation',
         img: cubeImg,
-        copy: 'All projects have people they are supposed to serve. I quickly translate business requeriments into experince that satisfy users on all their devices.'
+        copy: 'All projects have people they are supposed to serve. I quickly translate business requeriments into visual experinces that satisfy users on all their devices.'
       },
       {
         actionable: 'LINKTOGITHUB',
@@ -26,7 +26,7 @@ class Slider extends Component {
         actionable: 'LINKTOEXAMPLES',
         heading: 'Execution & Delivery',
         img: codeImg,
-        copy: "I've worked on some pretty interesting projects..."
+        copy: "I've worked on some pretty big projects..."
       }
     ],
     popoutHidden: true,
