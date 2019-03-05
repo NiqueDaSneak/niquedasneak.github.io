@@ -53,36 +53,71 @@ $iconWidth: 2vw
       width: $iconWidth * 13
       animation-delay: 1.3s
 
-@media #{$desktop}
+@media #{$tablet}
+  $iconWidth: 1vw
+
   .footerLogoContainer
-    padding-top: 5vh
     img
       &:nth-of-type(1)
-        width: 2vw
+        width: $iconWidth * 1
       &:nth-of-type(2)
-        width: 3vw
+        width: $iconWidth * 2
       &:nth-of-type(3)
-        width: 4vw
+        width: $iconWidth * 3
       &:nth-of-type(4)
-        width: 5vw
+        width: $iconWidth * 4
       &:nth-of-type(5)
-        width: 6vw
+        width: $iconWidth * 5
       &:nth-of-type(6)
-        width: 7vw
+        width: $iconWidth * 6
       &:nth-of-type(7)
-        width: 8vw
+        width: $iconWidth * 7
       &:nth-of-type(8)
-        width: 9vw
+        width: $iconWidth * 8
       &:nth-of-type(9)
-        width: 10vw
+        width: $iconWidth * 9
       &:nth-of-type(10)
-        width: 11vw
+        width: $iconWidth * 10
       &:nth-of-type(11)
-        width: 12vw
+        width: $iconWidth * 11
       &:nth-of-type(12)
-        width: 13vw
+        width: $iconWidth * 12
       &:nth-of-type(13)
-        width: 14vw
+        width: $iconWidth * 13
+
+@media #{$desktop}
+  $iconWidth: .77vw
+
+  .footerLogoContainer
+    padding-top: 5vh
+    width: 66vw
+    img
+      &:nth-of-type(1)
+        width: $iconWidth * 1
+      &:nth-of-type(2)
+        width: $iconWidth * 2
+      &:nth-of-type(3)
+        width: $iconWidth * 3
+      &:nth-of-type(4)
+        width: $iconWidth * 4
+      &:nth-of-type(5)
+        width: $iconWidth * 5
+      &:nth-of-type(6)
+        width: $iconWidth * 6
+      &:nth-of-type(7)
+        width: $iconWidth * 7
+      &:nth-of-type(8)
+        width: $iconWidth * 8
+      &:nth-of-type(9)
+        width: $iconWidth * 9
+      &:nth-of-type(10)
+        width: $iconWidth * 10
+      &:nth-of-type(11)
+        width: $iconWidth * 11
+      &:nth-of-type(12)
+        width: $iconWidth * 12
+      &:nth-of-type(13)
+        width: $iconWidth * 13
 
 @keyframes heartbeat
   0%

@@ -17,14 +17,29 @@ footer
   div.hoc
     margin-right: 10vw
 
+.contactMe
+  font-size: 4vw
+  font-style: italic
+  margin-right: 10vw
+  color: white
+  text-align: right
+
 // TABLET
 @media #{$tablet}
   .App
     background-image: url('../imgs/wood-bg-med.png')
+  .contactMe
+    font-size: 2.6vw
 
 // DESKTOP
 @media #{$desktop}
   .App
     background-image: url('../imgs/wood-bg-large.png')
   footer
-    height: 8vh
+    height: 14vh
+    justify-content: left
+    div.hoc
+      margin-right: 4vw
+  .contactMe
+    font-size: 1.4vw
+    margin-right: 2vw

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './assets/sass/App.sass';
+import React, { Component } from 'react'
+import './assets/sass/App.sass'
+
 import phoneIcon from './assets/imgs/phone-call.svg'
 import envelopeIcon from './assets/imgs/envelope.svg'
 
@@ -31,8 +32,9 @@ class App extends Component {
         <MainContent toggleActionButton={ () => this.toggleActionButton() } />
         <footer>
           <FooterAnimatedLogo />
-          <Btn style={ {marginRight: '14vw'} } bgColor='' img={phoneIcon} link='penis.com' title=''/>
-          <Btn bgColor='' img={envelopeIcon} link='penis.com' title=''/>
+          <span className='contactMe'>Contact Me:</span>
+          <Btn  bgColor='' img={phoneIcon} link='tel:513-291-7758"' title=''/>
+          <Btn bgColor='' img={envelopeIcon} link='mailto:thisisdom4@gmail.com' title=''/>
         </footer>
         <ActionButton toggleTLDR={ () => this.toggleTLDR() } hidden={ this.state.actionButtonHidden } />
         <TLDR toggleTLDR={ () => this.toggleTLDR() } hidden={ this.state.tldrHidden } />
