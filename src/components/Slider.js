@@ -26,7 +26,7 @@ class Slider extends Component {
         actionable: 'LINKTOEXAMPLES',
         heading: 'Execution & Delivery',
         img: codeImg,
-        copy: "I've worked on some pretty big projects..."
+        copy: "Check out some of the projects I've worked on..."
       }
     ],
     popoutHidden: true,
