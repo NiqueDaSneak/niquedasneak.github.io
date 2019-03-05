@@ -15,14 +15,10 @@ const LandingScreen = () => (
         <Typist.Backspace count={19} delay={750}/>
         <span className='headerTitle'>Futurist</span>
         <Typist.Backspace count={8} delay={750}/>
-        <span className='headerTitle'>Yogi</span>
-        <Typist.Backspace count={4} delay={750}/>
         <span className='headerTitle'>Empath</span>
         <Typist.Backspace count={6} delay={750}/>
         <span className='headerTitle'>Technologist</span>
         <Typist.Backspace count={12} delay={750}/>
-        <span className='headerTitle'>Kobe Fan</span>
-        <Typist.Backspace count={8} delay={750}/>
         <span className='headerTitle'>Traveler</span>
         <Typist.Backspace count={8} delay={750}/>
         <span className='headerTitle'>Human Being</span>
