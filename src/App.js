@@ -3,6 +3,7 @@ import './assets/sass/App.sass'
 
 import phoneIcon from './assets/imgs/phone-call.svg'
 import envelopeIcon from './assets/imgs/envelope.svg'
+import footerLogo from './assets/imgs/footerLogo.svg'
 
 import LandingScreen from './components/LandingScreen'
 import MainContent from './components/MainContent'
@@ -31,7 +32,7 @@ class App extends Component {
         <LandingScreen />
         <MainContent toggleActionButton={ () => this.toggleActionButton() } />
         <footer>
-          <FooterAnimatedLogo />
+          <img className='footerLogoNoAnimate' src={footerLogo} />
           <span className='contactMe'>Contact Me:</span>
           <Btn  bgColor='' img={phoneIcon} link='tel:513-291-7758"' title=''/>
           <Btn bgColor='' img={envelopeIcon} link='mailto:thisisdom4@gmail.com' title=''/>
