@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "896fdbf70c8087c3b20e",
+    "revision": "1c9b2f127bedf9cd7f89",
     "url": "/static/css/main.6b1a4c80.chunk.css"
   },
   {
-    "revision": "896fdbf70c8087c3b20e",
-    "url": "/static/js/main.896fdbf7.chunk.js"
+    "revision": "1c9b2f127bedf9cd7f89",
+    "url": "/static/js/main.1c9b2f12.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/wood-bg-large.feb97ae9.png"
   },
   {
-    "revision": "1f5e224b2c7c0881e2bd27a9206627f1",
+    "revision": "40d35ae9e3e85834609885ef29217c05",
     "url": "/index.html"
   }
 ];
