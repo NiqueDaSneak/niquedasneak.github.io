@@ -9,7 +9,6 @@ import LandingScreen from './components/LandingScreen'
 import MainContent from './components/MainContent'
 import ActionButton from './components/ActionButton'
 import TLDR from './components/TLDR'
-import FooterAnimatedLogo from './components/FooterAnimatedLogo'
 import Btn from './components/Btn'
 
 class App extends Component {
